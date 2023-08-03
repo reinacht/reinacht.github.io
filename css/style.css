@@ -1,0 +1,295 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Labrada:wght@300&family=Lato&family=Lora:wght@400;500&family=Poppins&family=Quicksand:wght@500&display=swap');
+
+/* HTML and BODY STYLE */
+
+*{
+    margin: 5px;
+    font-family: Lato;
+}
+
+body {
+    margin: 0px;
+    background-color: #F7FFE5;
+    background-image: url("/assets/journey.");
+    background-size: cover;
+}
+
+/* HEADER SECTION STYLE */
+
+header {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav {
+    margin: -5px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #A0C49D;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover:not(.logo) {
+    background-color: #F7FFE5;
+    border: 3px solid #E1ECC8;
+    border-radius: 10px;
+}
+
+#nav nav {
+    display: flex;
+    gap: 15px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+/* MAIN SECTION STYLE */
+/* MAIN HOME SECTION STYLE */
+/* HOME - IMGFORM SECTION STYLE */
+
+#img-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-testi {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.slides {
+    display: none;
+}
+  
+.slides.active {
+    display: block;
+    height: 320px;
+}
+
+.slides.active img {
+    border-radius: 10px;
+}
+
+.img-testi .testi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-testi .testi img {
+    height: 60px;
+    border-radius: 10px;
+}
+
+#form {
+    border: 5px solid #A0C49D;
+    border-radius: 10px;
+    background-color: #E1ECC8;
+    height: 400px;
+}
+
+#form div{
+    margin: 15px;
+}
+
+#forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HOME - TEXT SECTION STYLE */
+
+#text {
+    margin-bottom: 75px;
+    margin-left: 150px;
+}
+
+/* OUR PACKAGES STYLE */
+
+#our-packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* OUR PACKAGES IMG TEXT STYLE */
+
+#packschoice1 {
+    display: flex;
+    flex-basis: 33% 34% 33%;
+}
+
+.packs1 {
+    flex: 1;
+}
+
+.packs1:first-child, .packs1:last-child {
+    flex-basis: 33%;
+}
+
+.packs1:nth-child(2) {
+    flex-basis: 34%;
+}
+
+#packschoice2 {
+    display: flex;
+    flex-basis: 33% 34% 33%;
+}
+
+.packs2 {
+    flex: 1;
+}
+
+.packs2:first-child, .packs2:last-child {
+    flex-basis: 33%;
+}
+
+.packs2:nth-child(2) {
+    flex-basis: 34%;
+}
+
+.img-pack {
+    height: 50px;
+    border-radius: 50px;
+}
+
+/* FOOTER STYLE */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    margin-top: 50px;
+}
+
+#bttn {
+    background-color: #E1ECC8;
+    border: 3px solid #A0C49D;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#bttn:hover {
+    background-color: #A0C49D;
+    color: #374d03;
+    border-radius: 25px;    
+    border: 3px solid #4bb543;
+}
+
+/* MEDIA QUERY */
+
+/* Untuk perangkat tablet */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none; 
+  }
+
+  #nav {
+    font-size: 16px; 
+  }
+
+  #img-form {
+    flex-direction: column; 
+  }
+
+  .img-testi {
+    margin-left: 0; 
+  }
+
+  #form {
+    margin-top: 20px; 
+    height: 320px; 
+  }
+
+  #form div {
+    margin: 10px; 
+  }
+
+  #forms {
+    margin-top: 15px;
+  }
+
+  #text {
+    margin-left: 0; 
+  }
+
+  #our-packages {
+    margin-bottom: 30px; 
+  }
+
+  #packschoice1,
+  #packschoice2 {
+    flex-direction: column; 
+  }
+
+  .packs1,
+  .packs2 {
+    flex-basis: 100%; 
+  }
+}
+
+/* Untuk perangkat smartphone */
+@media only screen and (max-width: 480px) {
+  #nav {
+    font-size: 14px;
+  }
+
+  #img-form {
+    flex-direction: column; 
+  }
+
+  .img-testi {
+    margin-left: 0; 
+  }
+
+  #form {
+    margin-top: 20px; 
+    height: 320px; 
+  }
+
+  #form div {
+    margin: 10px;
+  }
+
+  #forms {
+    margin-top: 15px; 
+  }
+
+  #text {
+    margin-left: 0; 
+  }
+
+  #our-packages {
+    margin-bottom: 30px; 
+  }
+
+  #packschoice1,
+  #packschoice2 {
+    flex-direction: column; 
+  }
+
+  .packs1,
+  .packs2 {
+    flex-basis: 100%; 
+  }
+}
